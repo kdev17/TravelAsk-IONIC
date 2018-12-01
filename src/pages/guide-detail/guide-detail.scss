@@ -1,0 +1,243 @@
+page-guide-detail {
+
+  .avatar {
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 60px;
+    box-shadow: 0px 0px 5px #2b3500;
+  }
+
+  .h1 {
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+
+  .location {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2px;
+    background: #ffffff;
+    color: #232323;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 0px 0px 0px 5px;
+    box-shadow: 1px 1px 2px #000000a6;
+  }
+
+  .datiGenerali {
+    display: flex;
+    height: 150px;
+    align-items: center;
+
+    h1 {
+      margin: 0px;
+    }
+  }
+
+  .chat {
+    height: 23px;
+  }
+
+  .chatBox {
+    top: 120px;
+    right: 25px;
+  }
+
+  .margin25 {
+    margin: 25px;
+  }
+
+  .background {
+    background-image: url("https://www.zingarate.com/pictures/2018/06/28/bologna_7.jpeg");
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+
+  #idTest {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+  }
+
+  .datiGenerali::after {
+    content: "";
+    background: url(https://www.zingarate.com/pictures/2018/06/28/bologna_7.jpeg);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .contentUser {
+    // background-image: linear-gradient(#000000bd, #0000007d);
+    padding: 1px;
+
+    h1 {
+      margin: 5px;
+    }
+  }
+
+  .section {
+    padding: 10px;
+    background: white;
+    margin: 20px;
+    margin: 0px 20px;
+    border-bottom: 3px solid map-get($colors, primary);
+    ;
+    margin-bottom: 5px;
+    color: #4e4e4e;
+    padding-bottom: 20px;
+    margin-top: 10px;
+
+    h1 {
+      margin: 0px;
+      font-size: 16px;
+    }
+  }
+
+  .hobbyElement {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px;
+    margin: 5px;
+
+    span {
+      flex: 1;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    ion-range {
+      flex: 4;
+      padding: 0px !important;
+      margin: 0px;
+    }
+  }
+
+  ion-item {
+    padding: 0px;
+  }
+
+  ion-title {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+  }
+
+  .comment {
+    .author {
+      // color: map-get($colors, primary);
+      font-weight: bold;
+    }
+
+    .dateCreation {
+      float: right;
+    }
+
+    p {
+      color: black;
+      font-size: 16px;
+    }
+  }
+
+  .labelForm {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .padding0 {
+    padding: 0px;
+  }
+
+  .borderNone {
+    border: none;
+  }
+
+  .flexCenter {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconButtons {
+    padding: 2px;
+    font-size: 22px;
+    margin: 5px;
+  }
+
+  .btnTrip {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .fontWeight400 {
+    font-weight: 400;
+  }
+
+  .labelCity {
+    margin: 0px;
+    color: #000000c4;
+    padding: 0px;
+  }
+
+  .wiseQuote {
+    font-size: 16px;
+    font-style: oblique;
+    padding: 16px 20px;
+    text-align: center;
+    color: #000000a1;
+    margin: 0px 20px;
+  }
+}
+
+.activities {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+
+  ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+
+.comments {
+  color: black;
+    font-size: 16px;
+    padding: 5px;
+    border-top: 3px solid;
+    background: #ffa500bd;
+    border-top: 3px solid #6a6a6a;
+  h1 {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .comment {
+    margin: 10px 0px;
+    border-bottom: 3px solid orange;
+    color: black;
+    font-size: 16px;
+    padding: 5px 15px;
+    p{
+      color: black;
+    font-size: 16px;
+    background: #ffffffe3;
+    padding: 10px;
+    border-radius: 5px;
+    }
+  }
+}

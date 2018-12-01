@@ -1,0 +1,43 @@
+page-chat {
+  .iconSend {
+    width: 10%;
+    font-size: 40px;
+    text-align: center;
+    //border: 1px solid;
+  }
+
+  .flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inheritPos {
+    position: inherit;
+  }
+
+  .msgToSend {
+    border-radius: 5px;
+  }
+
+  .messaggiContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .msg {
+    float: left;
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid #ffa500a1;
+    margin: 15px 0px;
+    max-width: 80%
+  }
+
+  .myMsg {
+    float: right;
+    padding: 10px;
+    background: #fcbb55;
+    border-radius: 2px;
+  }
+}

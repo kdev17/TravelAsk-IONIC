@@ -14,3 +14,66 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+ion-content.scroll-content{
+    background: #ffaf1d;
+}
+
+.width100{
+    width: 100%;
+}
+
+.toolbar-background-ios{
+    background: #ffa500bf;
+}
+
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+    // color: map-get($colors, secondary );
+    color: map-get($colors, secondary);
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.justifyCenter{
+    justify-content: center;
+}
+.alignCenter{
+    align-content: center;
+}
+
+.flex1{
+    flex:1;
+}
+.flex2{
+    flex:2;
+}
+.flex3{
+    flex:3;
+}
+
+.noPadding{
+    padding: 0px;
+}
+.noMargin{
+    margin: 0px;
+}
+
+.flex45Percent{
+    flex: 1 0 45%;
+}
+
+.margin5px{
+    margin: 5px;
+}

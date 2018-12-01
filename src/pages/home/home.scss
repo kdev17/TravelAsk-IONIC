@@ -1,3 +1,77 @@
 page-home {
+  ion-item {
+    height: 120px;
+  }
 
+  ion-label {
+    height: 100%;
+  }
+  ion-searchbar{
+    border: none;
+    background: map-get($colors, primary );
+    padding: 10px;
+    .searchbar-input{
+      background: rgba(0, 0, 0, 0.137);
+    }
+  }
+  .searchBar{
+    background: map-get($colors, primary );
+    padding: 10px;
+  }
+
+  .searchBarLabel{
+    display: block;
+    text-align: center;
+    padding: 1px 0px;
+    color: #00000096;
+    font-size: 11px;
+    background: map-get($colors, primary );
+  }
+
+  .guideList{
+    margin: 10px 0px;
+    // background-image: linear-gradient(#000000bd, #0000007d);
+    padding-top: 10px;
+  }
+  .guida {
+    height: 120px;
+    display: flex;
+    border-bottom: 3px solid orange;
+    margin-bottom: 0px;
+    padding: 5px;
+    width: 95%;
+    border-radius: 4px;
+    margin: 10px auto;
+    background: white;
+    border-top: 1px solid #8080805c;
+    border-right: 1px solid #8080805c;
+    border-left: 1px solid #8080805c;
+    
+    .avatarWrapper {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      top: 26%;
+      position: relative;
+    }
+
+    .infoGuide {
+      flex: 2;
+      padding: 0px 7px;
+    }
+
+    .location{
+        float: right;
+    }
+    .nameGuide{
+        margin: 0px;
+    }
+    .previewGuide{
+        color: #8e9093;
+    }
+  }
+  .scroll-content{
+    background: #f8f8f8;
+   // background-image: linear-gradient(#000000bd, #0000007d);
+  }
 }
