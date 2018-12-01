@@ -37,4 +37,8 @@ export class GuideDetailPage {
       receiverUsername: 'Karim'
     });
   }
+
+  sendComment() {
+    console.log('Commento inviato');
+  }
 }

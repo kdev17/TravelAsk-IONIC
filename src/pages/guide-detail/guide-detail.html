@@ -146,12 +146,12 @@
 
       <div class="activities">
         <span class="flexRow flex45Percent margin5px">
-            <ion-icon name="arrow-round-forward"></ion-icon>
-            Italian
+          <ion-icon name="arrow-round-forward"></ion-icon>
+          Italian
         </span>
         <span class="flexRow flex45Percent margin5px">
-            <ion-icon name="arrow-round-forward"></ion-icon>
-            English
+          <ion-icon name="arrow-round-forward"></ion-icon>
+          English
         </span>
       </div>
 
@@ -183,14 +183,16 @@
         </p>
       </div>
 
-      <form color="secondary">
+      <form color="secondary" class="flexColumn alignItemsCenter">
         <ion-item class="padding0">
           <ion-label color="secondary" stacked>
             <span class="labelForm">Lascia un commento</span>
           </ion-label>
           <ion-textarea rows="6" placeholder="Facci sapere cosa pensi su Karim!"></ion-textarea>
         </ion-item>
-        <button ion-button type="submit" block>Invia commento</button>
+        <button (click)="sendComment()" ion-button color="secondary" class="btnTrip fontWeight400 width100">
+          Invia commento
+        </button>
       </form>
     </div>
   </div>
