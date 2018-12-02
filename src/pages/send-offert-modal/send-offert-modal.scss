@@ -1,0 +1,92 @@
+page-send-offert-modal {
+  background: #dcdcdc45;
+
+  .textHeader {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .traveler {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0px 0px 7px gainsboro;
+  }
+
+  .avatar {
+    flex-basis: 30%;
+  }
+
+  .data {
+    flex-basis: 70%;
+  }
+
+  .el {
+    margin: 15px 5px;
+    padding: 0px 10px;
+  }
+
+  .when{
+    text-align: center;
+    font-size: 16px;
+  }
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #243327;
+  }
+
+  .imgCar {
+    border-radius: 50%;
+  }
+
+  .fontWeight300 {
+    font-weight: 300;
+  }
+
+  .headerSection {
+    text-align: center;
+    background: #ffbb47;
+    font-weight: 400;
+    padding: 3px;
+    border-bottom: 2px solid #1e3427;
+  }
+  .scrollableX{
+      overflow: hidden;
+      overflow-x: scroll;
+      display: flex;
+
+  }
+  .itemScrollable{
+    margin: 10px 5px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px #000000a8;
+    font-weight: 300;
+    color: #000000a8;
+  }
+  .selected{
+    color: orange;
+    background: #1e342700;
+    border: 1px solid;
+    box-shadow: none;
+    font-weight: bold;
+    box-shadow: 0px 1px 1px #00000038;
+  }
+  .scrollY{
+    max-height: 110px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .msgArea{
+    background: #1e342703;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #1e342721;
+    padding: 10px;
+  }
+}

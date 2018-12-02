@@ -26,15 +26,18 @@ ion-content.scroll-content{
 .width100{
     width: 100%;
 }
+.width90{
+    width: 90%;
+}
 .width80{
     width: 80%;
 }
 
-.toolbar-background-ios{
+.toolbar-background{
     background: #ffa500bf;
 }
 
-.bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default{
+.bar-button-default, .bar-button-default.bar-button-default, .bar-button-clear-default{
     // color: map-get($colors, secondary );
     color: map-get($colors, secondary);
 }
@@ -83,4 +86,19 @@ ion-content.scroll-content{
 
 .margin5px{
     margin: 5px;
+}
+
+.displayBlock{
+    display: block;
+}
+
+.centerText{
+    text-align: center
+}
+
+.bold{
+    font-weight: bold;
+}
+.margin0{
+    margin: 0px;
 }

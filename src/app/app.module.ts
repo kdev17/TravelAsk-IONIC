@@ -13,6 +13,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProfilePage } from '../pages/profile/profile';
 import { GuideDetailPageModule } from '../pages/guide-detail/guide-detail.module';
 import { ChatPage } from '../pages/chat/chat';
+import { CreateTripPage } from '../pages/create-trip/create-trip';
+import { OffertPage } from '../pages/offert/offert';
+import { SendOffertModalPage } from '../pages/send-offert-modal/send-offert-modal';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { ChatPage } from '../pages/chat/chat';
     HomePage,
     ProfilePage,
     TabsPage,
-    ChatPage
+    ChatPage,
+    CreateTripPage,
+    OffertPage,
+    SendOffertModalPage
   ],
   imports: [
     BrowserModule,
     GuideDetailPageModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(OffertPage)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +43,10 @@ import { ChatPage } from '../pages/chat/chat';
     HomePage,
     ProfilePage,
     TabsPage,
-    ChatPage
+    ChatPage,
+    CreateTripPage,
+    OffertPage,
+    SendOffertModalPage
   ],
   providers: [
     StatusBar,

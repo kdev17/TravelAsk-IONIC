@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ChatPage } from '../chat/chat';
+import { CreateTripPage } from '../create-trip/create-trip';
 
 /**
  * Generated class for the GuideDetailPage page.
@@ -35,6 +36,11 @@ export class GuideDetailPage {
     this.navCtrl.push(ChatPage, {
       id: '1',
       receiverUsername: 'Karim'
+    });
+  }
+  goToCreateTrip() {
+    this.navCtrl.push(CreateTripPage, {
+      id: '1',
     });
   }
 
