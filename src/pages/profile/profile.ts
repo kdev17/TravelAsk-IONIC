@@ -7,6 +7,10 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ProfilePage {
 
+  profileSettingMenu = ['General information', 'Local host information', 'Contact & Identification'];
+  notificationMenu = ['Notification settings'];
+  contactSupportMenu = ['Contacts & Support'];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

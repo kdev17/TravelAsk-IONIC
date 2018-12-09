@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController, AlertController } from 'ionic-angular';
 import { SendOffertModalPage } from '../send-offert-modal/send-offert-modal';
+import { AcceptOfferPage } from '../accept-offer/accept-offer';
+import { ChatPage } from '../chat/chat';
 
 /**
  * Generated class for the OffertPage page.
@@ -17,8 +19,10 @@ import { SendOffertModalPage } from '../send-offert-modal/send-offert-modal';
 export class OffertPage {
   // ARRIVANO OFFERTE AI LOCALI!
   inboxMenu = 'offers';
-  // public navCtrl: NavController, public navParams: NavParams
-  constructor(public modalCtrl: ModalController, private alertCtrl: AlertController) {
+  // 
+  constructor(
+    public navCtrl: NavController, public navParams: NavParams,
+    public modalCtrl: ModalController, private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -28,15 +32,26 @@ export class OffertPage {
   sendOffert() {
     const modal = this.modalCtrl.create(SendOffertModalPage);
     modal.onDidDismiss(data => {
-      console.log(data);
-      this.alertCtrl.create({
-        title: 'Offert has been sent',
-        subTitle: data.msg,
-        cssClass: 'alertPopup',
-        buttons: ['Ok'],
-      }).present();
+      if(data) {
+        this.alertCtrl.create({
+          title: 'Offert has been sent',
+          subTitle: data.msg,
+          cssClass: 'alertPopup',
+          buttons: ['Ok'],
+        }).present();
+      }
     });
     modal.present();
-    
+  }
+
+  showOffer() {
+    const modal = this.modalCtrl.create(AcceptOfferPage);
+    modal.onDidDismiss(data => {
+      console.log(data);
+      if(data && data.action != 'skip'){
+        this.navCtrl.push(ChatPage);
+      }
+    });
+    modal.present();
   }
 }

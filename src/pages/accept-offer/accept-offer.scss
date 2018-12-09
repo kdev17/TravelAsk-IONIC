@@ -1,8 +1,5 @@
-page-profile {
-
-  // background: #dcdcdc45;
-  background: #80808012;
-
+page-accept-offer {
+  background: #dcdcdc45;
   .textHeader {
     padding: 10px;
     margin-bottom: 10px;
@@ -16,6 +13,7 @@ page-profile {
     border-radius: 5px;
     background: white;
     box-shadow: 0px 0px 7px gainsboro;
+    height: 90%;
   }
 
   .avatar {
@@ -53,18 +51,38 @@ page-profile {
     margin: 0px;
   }
 
-  .titleSection {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 10px;
-    //margin: 10px 0px;
-    margin-bottom: 0;
-    color: #000000b3;
-    background: #dedede6b;
+  .elInfo{
+    padding: 10px;
+    margin: auto;
+    font-size: 15px;
+    box-shadow: 0px 1px 1px #80808082;
+    background: white;
+    width: 100%;
+    border: 1px solid gainsboro;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
   }
 
-  .viewProfBtn{
-    height: 20px;
-    font-size: 12px;
+  .footerAction {
+    position: absolute;
+    bottom: 5px;
+    padding: 5px;
+    padding-top: 10px;
+  }
+
+  .headerText{
+    font-size: 19px;
+    color: #203426f0;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .offerMsg{
+    margin: 10px;
+    padding: 10px;
+    background: #ffa50033;
+    border-radius: 5px;
   }
 }

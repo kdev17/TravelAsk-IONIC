@@ -6,6 +6,8 @@ import { HomePage } from '../home/home';
 import { ProfilePage } from '../profile/profile';
 import { GuideDetailPage } from '../guide-detail/guide-detail';
 import { ChatPage } from '../chat/chat';
+import { OffertPage } from '../offert/offert';
+import { ChatListPage } from '../chat-list/chat-list';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -13,11 +15,11 @@ import { ChatPage } from '../chat/chat';
 export class TabsPage {
 
   tab1Root = HomePage ;
+  tab2Root = OffertPage;
+  tab3Root = ChatListPage;
+  tab4Root = ProfilePage;
   tab5Root = GuideDetailPage;
   tab6Root = ChatPage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
-  tab4Root = ProfilePage;
 
   constructor() {
 

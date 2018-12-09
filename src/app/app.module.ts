@@ -16,6 +16,9 @@ import { ChatPage } from '../pages/chat/chat';
 import { CreateTripPage } from '../pages/create-trip/create-trip';
 import { OffertPage } from '../pages/offert/offert';
 import { SendOffertModalPage } from '../pages/send-offert-modal/send-offert-modal';
+import { AcceptOfferPage } from '../pages/accept-offer/accept-offer';
+import { ChatPageModule } from '../pages/chat/chat.module';
+import { ChatListPageModule } from '../pages/chat-list/chat-list.module';
 
 @NgModule({
   declarations: [
@@ -28,12 +31,14 @@ import { SendOffertModalPage } from '../pages/send-offert-modal/send-offert-moda
     ChatPage,
     CreateTripPage,
     OffertPage,
-    SendOffertModalPage
+    SendOffertModalPage,
+    AcceptOfferPage,
   ],
   imports: [
     BrowserModule,
     GuideDetailPageModule,
-    IonicModule.forRoot(OffertPage)
+    ChatListPageModule,
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +51,8 @@ import { SendOffertModalPage } from '../pages/send-offert-modal/send-offert-moda
     ChatPage,
     CreateTripPage,
     OffertPage,
-    SendOffertModalPage
+    SendOffertModalPage,
+    AcceptOfferPage,
   ],
   providers: [
     StatusBar,

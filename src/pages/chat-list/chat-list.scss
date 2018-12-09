@@ -1,0 +1,79 @@
+page-chat-list {
+
+    background: #dcdcdc45;
+    
+    .textHeader{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .traveler{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0px 0px 7px gainsboro;
+    }
+
+    .avatar{
+        flex-basis: 22%;
+    }
+    .data{
+        flex-basis: 60%;
+    }
+    .arrowIcon{
+        flex-basis: 1%;
+        margin: auto;
+        color: gray;
+    }
+
+    .el {
+        margin-bottom: 10px;
+        padding: 0px 10px;
+    }
+    .name{
+        font-size: 20px;
+        font-weight: bold;
+        color: #243327;
+    }
+    .imgCar{
+        border-radius: 50%;
+    }
+
+    .fontWeight300{
+        font-weight: 300;
+    }
+
+    .alertPopup{
+        border-radius: 2px;
+    }
+    .margin0{
+        margin: 0px;
+    }
+
+    .lastMsg{
+        font-size: 14px;
+        font-weight: 400;
+        color: #00000087;
+    }
+
+    .avatar {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');
+    
+    /* make a square container */
+    width: 50px;
+    height: 75px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+}

@@ -100,5 +100,9 @@ ion-content.scroll-content{
     font-weight: bold;
 }
 .margin0{
-    margin: 0px;
+    margin: 0px !important;
+}
+
+.spaceAround{
+    justify-content: space-around;
 }

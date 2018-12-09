@@ -18,8 +18,7 @@ export class CreateTripPage {
 
   maxDateTrip = moment().add(1, 'y').toDate();
   todo = {}
-  // public navCtrl: NavController, public navParams: NavParams, 
-  constructor(private formBuilder: FormBuilder ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder ) {
     this.todo = this.formBuilder.group({
       destinationTravel: [''],
       fromDate: [''],
@@ -32,7 +31,8 @@ export class CreateTripPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CreateTripPage');
   }
-logForm() {
-    console.log(this.todo)
+
+createTrip() {
+    this.navCtrl.pop();
   }
 }
