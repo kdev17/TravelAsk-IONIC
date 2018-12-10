@@ -19,6 +19,11 @@ import { SendOffertModalPage } from '../pages/send-offert-modal/send-offert-moda
 import { AcceptOfferPage } from '../pages/accept-offer/accept-offer';
 import { ChatPageModule } from '../pages/chat/chat.module';
 import { ChatListPageModule } from '../pages/chat-list/chat-list.module';
+import { GeneralInfoSettingsPageModule } from '../pages/general-info-settings/general-info-settings.module';
+import { LocalHostInfoSettingsPageModule } from '../pages/local-host-info-settings/local-host-info-settings.module';
+import { ContactLocalInfoSettingsPageModule } from '../pages/contact-local-info-settings/contact-local-info-settings.module';
+import { NotificationSettingsPageModule } from '../pages/notification-settings/notification-settings.module';
+import { ContactSupportSettingsPageModule } from '../pages/contact-support-settings/contact-support-settings.module';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,11 @@ import { ChatListPageModule } from '../pages/chat-list/chat-list.module';
     BrowserModule,
     GuideDetailPageModule,
     ChatListPageModule,
+    GeneralInfoSettingsPageModule,
+    LocalHostInfoSettingsPageModule,
+    ContactLocalInfoSettingsPageModule,
+    NotificationSettingsPageModule,
+    ContactSupportSettingsPageModule
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

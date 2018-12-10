@@ -44,6 +44,8 @@
   </div>
 
   <div class="contentUser">
+
+    <!-- Mostra soltanto se non è il proprio profilo -->
     <div class="flexRow contact">
       <button (click)="goToCreateTrip()" ion-button color="primary" class="flex1 btnTrip">
         <ion-icon name="plane" class="iconButtons"></ion-icon>
@@ -183,8 +185,8 @@
         </p>
       </div>
 
-      <form color="secondary" class="flexColumn alignItemsCenter">
-        <ion-item class="padding0">
+      <form color="secondary" class="flexColumn alignItemsCenter padding18">
+        <ion-item>
           <ion-label color="secondary" stacked>
             <span class="labelForm">Lascia un commento</span>
           </ion-label>

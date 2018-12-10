@@ -218,8 +218,7 @@ page-guide-detail {
   color: black;
     font-size: 16px;
     padding: 5px;
-    border-top: 3px solid;
-    background: #ffa500bd;
+    background: #ffa5000a;
     border-top: 3px solid #6a6a6a;
   h1 {
     font-size: 20px;
@@ -228,16 +227,28 @@ page-guide-detail {
 
   .comment {
     margin: 10px 0px;
-    border-bottom: 3px solid orange;
     color: black;
     font-size: 16px;
     padding: 5px 15px;
+    .author{
+      font-weight: 500;
+      color: #233328;
+    }
+    .dateCreation{
+      font-weight: 200;
+    }
     p{
-      color: black;
-    font-size: 16px;
+      color: #000000c7;
     background: #ffffffe3;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid #fcbb5d;
+    font-size: 15px;
+    font-weight: 400;
     }
+  }
+
+  .padding18{
+    padding: 0px 18px;
   }
 }

@@ -16,7 +16,7 @@
     <div class="el from fontWeight300 width100 centerText"><span class="label">From</span> Barcelona</div>
 
     <div>
-      <button (click)="goToChat()" ion-button color="primary" class="flex1 viewProfBtn" outline>
+      <button (click)="goToMyProfile()" ion-button color="primary" class="flex1 viewProfBtn" outline>
         View profile
       </button>
     </div>
@@ -26,8 +26,8 @@
   <div class="section">
     <div class="titleSection">{{'Profile settings' | uppercase}}</div>
     <ion-list class="margin0" inset>
-      <button ion-item *ngFor="let item of profileSettingMenu">
-        {{ item }}
+      <button ion-item *ngFor="let item of profileSettingMenu" (click)="goToPage(item)">
+        {{ item.label }}
       </button>
     </ion-list>
   </div>
@@ -35,8 +35,8 @@
   <div class="section">
     <div class="titleSection">{{'Notifications' | uppercase}}</div>
     <ion-list class="margin0" inset>
-      <button ion-item *ngFor="let item of notificationMenu">
-        {{ item }}
+      <button ion-item *ngFor="let item of notificationMenu" (click)="goToPage(item)">
+        {{ item.label }}
       </button>
     </ion-list>
   </div>
@@ -44,8 +44,8 @@
   <div class="section">
     <div class="titleSection">{{'Other' | uppercase}}</div>
     <ion-list class="margin0" inset>
-      <button ion-item *ngFor="let item of contactSupportMenu">
-        {{ item }}
+      <button ion-item *ngFor="let item of contactSupportMenu" (click)="goToPage(item)">
+        {{ item.label }}
       </button>
     </ion-list>
   </div>
