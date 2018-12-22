@@ -24,6 +24,11 @@ import { LocalHostInfoSettingsPageModule } from '../pages/local-host-info-settin
 import { ContactLocalInfoSettingsPageModule } from '../pages/contact-local-info-settings/contact-local-info-settings.module';
 import { NotificationSettingsPageModule } from '../pages/notification-settings/notification-settings.module';
 import { ContactSupportSettingsPageModule } from '../pages/contact-support-settings/contact-support-settings.module';
+import { GeneralInfoNamePageModule } from '../pages/general-info-name/general-info-name.module';
+import { GeneralInfoAboutMePageModule } from '../pages/general-info-about-me/general-info-about-me.module';
+import { GeneralInfoLocationPageModule } from '../pages/general-info-location/general-info-location.module';
+import { GeneralInfoLanguagesPageModule } from '../pages/general-info-languages/general-info-languages.module';
+import { GeneralInfoProfilePhotosPageModule } from '../pages/general-info-profile-photos/general-info-profile-photos.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,12 @@ import { ContactSupportSettingsPageModule } from '../pages/contact-support-setti
     LocalHostInfoSettingsPageModule,
     ContactLocalInfoSettingsPageModule,
     NotificationSettingsPageModule,
-    ContactSupportSettingsPageModule
+    ContactSupportSettingsPageModule,
+    GeneralInfoNamePageModule,
+    GeneralInfoAboutMePageModule,
+    GeneralInfoLocationPageModule,
+    GeneralInfoLanguagesPageModule,
+    GeneralInfoProfilePhotosPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

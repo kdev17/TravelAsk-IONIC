@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>generalInfoSettings</ion-title>
+    <ion-title>General information</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
+  <ion-list class="margin0" inset>
+    <button ion-item *ngFor="let item of generalInfoPage" (click)="openModal(item)">
+      {{ item.label }}
+    </button>
+  </ion-list>
+  
 </ion-content>

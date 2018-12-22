@@ -1,0 +1,11 @@
+page-general-info-name {
+  background: #fdfdfd;
+
+  .labelSpan {
+    font-size: 14px;
+    display: block;
+    color: map-get($colors, secondary);
+    padding: 9px 5px;
+    background: #80808014;
+  }
+}

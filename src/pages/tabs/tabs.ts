@@ -14,7 +14,7 @@ import { ChatListPage } from '../chat-list/chat-list';
 })
 export class TabsPage {
 
-  tab1Root = HomePage ;
+  tab1Root = ProfilePage ; // HomePage
   tab2Root = OffertPage;
   tab3Root = ChatListPage;
   tab4Root = ProfilePage;
