@@ -1,3 +1,62 @@
 page-general-info-profile-photos {
+  .container {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    color: #000000b3;
+    background: #f7f7f7;
+  }
 
+  .el {
+    margin: 10px;
+  }
+
+  .msgArea {
+    background: #fffffff6;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #1e342721;
+    padding: 10px;
+  }
+
+  .btnSave {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .photoShow {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .photoUpload {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fab953;
+    font-size: 14px;
+    width: 35%;
+    margin: 14px;
+    border-radius: 12px;
+    height: 80px;
+    background: #ffa5005e;
+    box-shadow: 0px 1px 1px #000000b8;
+  }
+
+  .cameraIcon {
+    font-size: 35px;
+  }
+
+  .mainPhoto{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+  }
 }

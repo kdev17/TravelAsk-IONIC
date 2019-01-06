@@ -1,3 +1,27 @@
 page-general-info-about-me {
+    .container{
+        font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    color: #000000b3;
+    background: #f7f7f7;
+    }
+    .el{
+        margin: 10px;
+    }
+    .msgArea{
+        background: #fffffff6;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #1e342721;
+        padding: 10px;
+      }
 
+      .btnSave{
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        margin-bottom: 10px;
+      }
 }

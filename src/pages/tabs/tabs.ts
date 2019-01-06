@@ -8,13 +8,16 @@ import { GuideDetailPage } from '../guide-detail/guide-detail';
 import { ChatPage } from '../chat/chat';
 import { OffertPage } from '../offert/offert';
 import { ChatListPage } from '../chat-list/chat-list';
+import { LoginPage } from '../login/login';
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
+  isLogin;
 
-  tab1Root = ProfilePage ; // HomePage
+  tab0Root = LoginPage;
+  tab1Root = HomePage;//ProfilePage ; // HomePage
   tab2Root = OffertPage;
   tab3Root = ChatListPage;
   tab4Root = ProfilePage;
@@ -24,4 +27,8 @@ export class TabsPage {
   constructor() {
 
   }
+  test($ev) {
+    this.isLogin = $ev.index === 0;
+  }
+
 }

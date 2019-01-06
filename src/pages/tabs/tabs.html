@@ -1,4 +1,5 @@
-<ion-tabs>
+<ion-tabs (ionChange)="test($event)">
+  <ion-tab [root]="tab0Root" tabTitle="Login" tabIcon="search" tabsHideOnSubPages="true"></ion-tab>
   <ion-tab [root]="tab1Root" tabTitle="Locals" tabIcon="search"></ion-tab>
   <ion-tab [root]="tab2Root" tabTitle="Inbox" tabIcon="mail"></ion-tab>
   <ion-tab [root]="tab3Root" tabTitle="Chats" tabIcon="chatbubbles"></ion-tab>

@@ -21,13 +21,13 @@
 <ion-content>
 <div class="searchBar">
   <ion-icon name="search" class="icon"></ion-icon>
-  <ion-input type="text" placeholder="Where next?"></ion-input>
+  <ion-input type="text" placeholder="Current location" [(ngModel)]="searched" (ngModelChange)="searchLocation(searched)"></ion-input>
 </div>
 <div class="section">
     <div class="titleSection">{{'Results' | uppercase}}</div>
     <ion-list class="margin0">
-      <button ion-item *ngFor="let item of results" (click)="saveLocation(item)">
-        {{ item.label }}
+      <button ion-item *ngFor="let location of locationSearched" (click)="saveLocation(location)">
+        <span class="countryLabel"> {{ location.country }} -</span> {{ location.name }}
       </button>
     </ion-list>
   </div>

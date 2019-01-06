@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
   templateUrl: 'general-info-profile-photos.html',
 })
 export class GeneralInfoProfilePhotosPage {
-
+  numberOfPhoto = ['1','2','3','4'];
   constructor(public navCtrl: NavController, public navParams: NavParams, 
     public viewCtrl: ViewController) {
   }

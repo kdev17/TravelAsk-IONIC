@@ -7,12 +7,36 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>generalInfoProfilePhotos</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="secondary">Cancel</span>
+      </button>
+    </ion-buttons>
+    <ion-title></ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content  class="container">
+  <div>
+    <div class="el">Add 5 photos that show others how amazing you are. This is your chance to make an awesome first impression! Remember: A friendly smile makes friends :) </div>
+    <div class="el">Important: We reserve our right to change your main photo or reject photos you upload that do not comply with our profile photo guidelines</div>
+    <div class="photoShow">
+      <div class="mainPhoto">
+        <div class="photoUpload">
+            <ion-icon class="cameraIcon" name="camera"></ion-icon>
+            <span>Upload</span>
+        </div>
+      </div>
+      <div class="photoUpload" *ngFor="let item of numberOfPhoto">
+        <ion-icon class="cameraIcon" name="camera"></ion-icon>
+        <span>Upload</span>
+      </div>
+    </div>
+  </div>
 </ion-content>
+<ion-footer>
+  <button (click)="dismiss()" ion-button color="primary" class="btnSave">
+    Save
+  </button>
+</ion-footer>

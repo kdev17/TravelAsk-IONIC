@@ -29,6 +29,11 @@ import { GeneralInfoAboutMePageModule } from '../pages/general-info-about-me/gen
 import { GeneralInfoLocationPageModule } from '../pages/general-info-location/general-info-location.module';
 import { GeneralInfoLanguagesPageModule } from '../pages/general-info-languages/general-info-languages.module';
 import { GeneralInfoProfilePhotosPageModule } from '../pages/general-info-profile-photos/general-info-profile-photos.module';
+import { GeneralProvider } from '../providers/general/general';
+import { GeoProvider } from '../providers/geo/geo';
+import { UtilsProvider } from '../providers/utils/utils';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginPageModule } from '../pages/login/login.module';
 
 @NgModule({
   declarations: [
@@ -46,6 +51,7 @@ import { GeneralInfoProfilePhotosPageModule } from '../pages/general-info-profil
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     GuideDetailPageModule,
     ChatListPageModule,
     GeneralInfoSettingsPageModule,
@@ -58,6 +64,7 @@ import { GeneralInfoProfilePhotosPageModule } from '../pages/general-info-profil
     GeneralInfoLocationPageModule,
     GeneralInfoLanguagesPageModule,
     GeneralInfoProfilePhotosPageModule,
+    LoginPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -77,7 +84,10 @@ import { GeneralInfoProfilePhotosPageModule } from '../pages/general-info-profil
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GeneralProvider,
+    GeoProvider,
+    UtilsProvider
   ]
 })
 export class AppModule {}

@@ -35,14 +35,31 @@ export class GeneralInfoLanguagesPage {
 
   getAllLanguages() {
     this.allLanguages = langs.names();
+    this.allLanguages = this.allLanguages.map(el =>  el = {lang: el, checked: el.checked || false});
+
   }
 
   findLanguage(str){
-    this.founded =  _.filter(this.allLanguages, function(el) { return el.toLowerCase().startsWith(str.toLowerCase()); });
+    this.founded =  _.filter(this.allLanguages, function(el) { return el.lang.toLowerCase().startsWith(str.toLowerCase()); });
   }
 
   dismiss(data?) {
     this.viewCtrl.dismiss(data);
+  }
+  save(data?) {
+    console.log(this.selectedLanguages);
+    this.viewCtrl.dismiss(data);
+  }
+
+  toggleLanguage(language) {
+    console.log(language);
+    const positionEl = _.findIndex(this.selectedLanguages, {lang: language.lang});
+
+    if(positionEl >= 0) { // Trovato
+      this.selectedLanguages.splice(positionEl, 1);
+    } else {
+      this.selectedLanguages.push(language);
+    }
   }
 
   searchLanguagesSubscribe() {

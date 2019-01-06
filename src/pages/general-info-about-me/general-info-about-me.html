@@ -14,17 +14,29 @@
       </button>
     </ion-buttons>
     <ion-title>About me</ion-title>
-    <ion-buttons end>
+   <!--  <ion-buttons end>
       <button ion-button (click)="dismiss()">
         <span ion-text color="secondary" showWhen="ios">Save</span>
         <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
       </button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content  class="container" >
+  <div>
+    <div class="el">Tell your guests why you love your city and what you can show them during their travels! 
+      Show a little personality, share something about your lifestyle and interest. </div>
+    <div class="el">Important: We love all languages, but we kindly ask to fill out this section in English. Please avoid writing brands, company names and links to other sites in your description.</div>
+    <div class="el">
+      <textarea class="msgArea" cols="30" rows="10" placeholder="More about you and your city...">Hi Karim, I want to show you around my beloved Bologna!</textarea>
+    </div>
+  </div>
 </ion-content>
+<ion-footer>
+  <button (click)="dismiss()" ion-button color="primary" class="btnSave">
+    Save
+  </button>
+</ion-footer>
